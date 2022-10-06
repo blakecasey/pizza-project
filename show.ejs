@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <title>Pizza Orders</title>
+</head>
+<body>
+    <h1>Pizza Orders</h1>
+   <ul>
+    
+    <div class="items">
+       <% for (let item of items) { %>
+        <li><%= item.fname %> </li> 
+        <li><%= item.lname %> </li> 
+        <li><%= item.phone %> </li> 
+        <li><%= item.email %> </li> 
+        <li><%= item.crust %> </li> 
+        <li><%= item.size %> </li> 
+        <li><%= item.toppings %> </li> 
+        <li>
+        </div>
+           
+            <div id="bttn">
+            <form action="/show/<%= item._id%>/edit">
+                <button id="edit"> Edit </button>
+             </form> 
+           <form action="/show/<%= item._id %>?_method=DELETE"  method="POST">
+                <button id="delete"> Delete </button>
+             </form> 
+        </li>
+        
+        <%} %>
+        </div>
+   </ul>
+
+   
+</body>
+</html>

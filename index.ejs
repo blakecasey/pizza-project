@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <title>Pizza Pizza</title>
+</head>
+<body>
+    <!-- Start of Header !-->
+    <div class="header">
+        <img src="pizza.jpg" id="Pizza" height=600px style="width:100%;">
+        <div id="title">
+            <h1>Order food Online for Dine in, Take</h1>
+        </div>
+        <div id="title2">
+            <h1>away, Home delivery</h1>
+            <a href="#forminfo" button class="button2">Start Order ☰</a>
+            </div>
+        </div>
+    </div>
+<!-- End of Header -->
+
+<!--Information Form -->
+
+
+<article>
+    <form action="/" method="post">
+        <fieldset id="forminfo">
+        <p id="form-prompt">Enter Your Information</p>
+        <br>
+        <label> Enter Your First Name: </label>
+        <input type ="text" id="fnameinfo" name ="fname"> <br>
+
+        <label> Enter Your Last Name: </label>
+        <input type ="text" id="lnameinfo" name ="lname"> <br>
+
+        <label>Enter Your Phone Number:</label>
+
+        <input type="tel" id="phone" name="phone"
+       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required> 
+
+        <label> Enter Your Email: </label>
+        <input type ="text" id="emailinfo" name ="email"> <br>
+        <br>
+        </fieldset>
+        <br>
+
+        Ordering Information w/ radio
+      
+        
+            <fieldset id="crustInfo">
+            <legend>Select Your Crust:</legend>
+        
+              <input type="radio" id="reg" name="crust" value=" Regular Crust ">
+              <label for="reg">Regular Crust</label>
+              <input type="radio" id="thin" name="crust" value=" Thin Crust ">
+              <label for="thin">Thin Crust </label>
+              <input type="radio" id="pan" name="crust" value=" Pan Crust ">
+              <label for="deep">Pan Crust</label>
+              <input type="radio" id="stuff" name="crust" value=" Stuff Crust ">
+              <label for="stuff">Stuff Crust</label>
+              
+            </fieldset>
+        <br>
+            <fieldset id="sizeinfo">
+            <legend>Select Your Size:</legend>
+        
+            <div>
+              <input type="radio" id="small" name="size" value=" Small ">
+              <label for=" Small ">Small</label>
+            
+              <input type="radio" id="Med" name="size" value=" Medium ">
+              <label for=" Medium ">Medium </label>
+            
+              <input type="radio" id="large" name="size" value=" Large ">
+              <label for=" Large ">Large</label>
+            
+                <input type="radio" id="xlarge" name="size" value=" Extra Large ">
+                <label for=" Extra Large ">Extra</label>
+              </div>
+              </fieldset>
+        
+        <br>    
+           
+        <fieldset id="toppinfo">
+
+            <legend>Select Your Toppings</legend>
+        <input type="checkbox" id="topp1" name="toppings" value=" Pepperoni ">
+        <label for="topp1">Pepperoni </label><br>
+
+        <input type="checkbox" id="topp2" name="toppings" value=" Sausage ">
+        <label for="topp2">Sausage </label><br>
+
+        <input type="checkbox" id="topp3" name="toppings" value=" Bacon ">
+        <label for="topp3">Bacon</label><br>
+
+        <input type="checkbox" id="topp4" name="toppings" value=" Onions ">
+        <label for="topp4">Onions </label><br>
+
+        <input type="checkbox" id="topp5" name="toppings" value=" Peppers ">
+        <label for="topp5">Peppers </label><br>
+
+        <input type="checkbox" id="topp6" name="toppings" value=" Onions ">
+        <label for="top6">Onions </label><br>
+
+        <input type="checkbox" id="topp7" name="toppings" value=" Mushrooms ">
+        <label for="topp7">Mushrooms </label><br>
+
+        <input type="checkbox" id="topp9" name="toppings" value=" Pineapple ">
+        <label for="topp9">Pineapple </label><br>
+
+        <input type="checkbox" id="topp10" name="toppings" value=" Ham ">
+        <label for="topp10">Ham </label><br>
+        </div> 
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+    </fieldset>    
+</form> 
+</body>
+</html>
